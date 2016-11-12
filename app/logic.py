@@ -5,12 +5,6 @@ class PrepaidBanking():
 		class.
 	"""
 
-	def deposit():
-		pass
-
-	def online_payment():
-		pass
-
 class PrepaidCard(PrepaidBanking):
 	"""
 		1. Currency in US-Dollars
@@ -31,7 +25,7 @@ class PrepaidCard(PrepaidBanking):
 		else:
 			return "Your card has not been recharged"
 
-	def online_payment(self, amoount):
+	def online_payment(self, amount):
 		if amount > self.balance:
 			return "Transuction has been rejected!"
 
