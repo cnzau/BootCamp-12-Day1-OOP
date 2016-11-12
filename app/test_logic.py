@@ -23,7 +23,7 @@ class PrepaidCard_TestCase(unittest.TestCase):
 	def test_prepaid_card_can_spend_valid_cash_amounts(self):
 		self.logic.deposit(600)
 		self.logic.online_payment(500)
-		self.assertEquals(self.logic.balance, 100, msg='Incorrect balance after withdrawal')
+		self.assertEquals(self.logic.balance, 100, msg='Incorrect balance after purchase')
 
 
 class PremiumPrepaidCardTestCases(unittest.TestCase):
@@ -47,7 +47,7 @@ class PremiumPrepaidCardTestCases(unittest.TestCase):
 	def test_prepaid_card_can_spend_valid_cash_amounts(self):
 		self.logic.deposit(600)
 		self.logic.online_payment(500)
-		self.assertEquals(self.logic.balance, 100, msg='Incorrect balance after withdrawal')
+		self.assertEquals(self.logic.balance, 100, msg='Incorrect balance after purchase')
 
 
 if __name__ == "__main__":
